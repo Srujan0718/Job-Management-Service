@@ -1,0 +1,24 @@
+:root {
+  --font-inter: 'Inter Display', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.job-title {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.page-number {
+  font-family: var(--font-inter);
+  font-weight: 800;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 100%;
+  letter-spacing: 0%;
+}

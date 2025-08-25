@@ -1,0 +1,41 @@
+
+.navbar {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    border-radius: 60px;
+    box-shadow: 0 0px 10px 2px rgba(70, 70, 70, 0.12);
+    height: 80px;
+    padding: 0 20px 0 20px;
+}
+.navbar .logo {
+    margin-left: 10px;
+}
+.navbar .text {
+    font-size: 90%;
+}
+.navbar .action-button {
+    background-image: linear-gradient(to bottom, #aa00ff, #7800b5);
+    border-radius: 50px;
+    font-family: "Inter Display", sans-serif;
+    margin-right: 10px;
+}
+
+.custom-input {
+    outline: none;
+    border:none;
+    font-size: 100%;
+    border-radius: 0;
+}
+.custom-input::placeholder {
+    color: #777;
+    /* font-family: "Inter Display"; */
+}
+.custom-root:not(:first-child) {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+.salary-range {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}

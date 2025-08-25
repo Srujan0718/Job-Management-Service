@@ -1,11 +1,8 @@
 // src/app/page.tsx
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
-import { Container, Title, Grid, Paper, Button, Group, Text, LoadingOverlay } from '@mantine/core';
-import { notifications } from '@mantine/notifications';
-import { IconPlus } from '@tabler/icons-react';
-import Link from 'next/link';
+import { useState, useEffect} from 'react';
+import { Container, Paper, Text, LoadingOverlay } from '@mantine/core';
 import { JobCard } from '@/components/JobCard';
 
 import "./dashboard.css"

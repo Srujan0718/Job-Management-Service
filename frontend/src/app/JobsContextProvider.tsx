@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useCallback, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Job, JobFilters } from '@/types/job';
 import { jobsApi } from '@/services/api';
 

@@ -1,6 +1,6 @@
 import { Job, CreateJobData, JobFilters } from '@/types/job';
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
 
 export const jobsApi = {
   async getJobs(filters?: JobFilters): Promise<Job[]> {

@@ -2,7 +2,7 @@
 
 import { Card, Text, Badge, Group, Button, Stack, Avatar } from '@mantine/core';
 import { Job } from '@/types/job';
-import { IconTrash, IconCalendar, IconMapPin, IconBuilding, IconUsers, IconCurrencyDollar } from '@tabler/icons-react';
+import {IconBuilding, IconUsers, IconCurrencyDollar } from '@tabler/icons-react';
 import { useState, useEffect } from 'react';
 
 interface JobCardProps {

@@ -1,17 +1,10 @@
 "use client";
-
-import { useState } from "react";
 import {
     Container,
     Group,
     Text,
     Button,
-    TextInput,
-    Select,
-    RangeSlider,
-    Flex,
 } from "@mantine/core";
-import { IconSearch, IconMapPin, IconUsers } from "@tabler/icons-react";
 import "../app/dashboard.css"
 import { CreateJobModal, useCreateJobModal } from "./createJobModal";
 import { JobFiltersWithHandlers } from "./JobFilters";

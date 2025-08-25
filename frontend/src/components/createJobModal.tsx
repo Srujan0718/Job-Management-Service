@@ -64,7 +64,7 @@ export function CreateJobModal({ opened, onClose, onJobCreated }: CreateJobModal
       onClose();
       onJobCreated(); // Refresh the jobs list
       
-    } catch (error) {
+    } catch (_error) {
       notifications.show({
         title: 'Error',
         message: 'Failed to create job',
@@ -81,7 +81,7 @@ export function CreateJobModal({ opened, onClose, onJobCreated }: CreateJobModal
   };
 
   const handleDateChange = (date: string | Date | null) => {
-    setSelectedDate(date ? new Date(date as any) : null);
+    setSelectedDate(date ? new Date(date) : null);
 
     if (date) {
       if (typeof date === "string") {

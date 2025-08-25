@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect} from 'react';
 import { TextInput, Select, Flex, Text, RangeSlider } from '@mantine/core';
 import { IconSearch, IconMapPin, IconUsers } from '@tabler/icons-react';
 import { JobFilters, JobType } from '@/types/job';
@@ -7,7 +7,7 @@ import { useDebouncedValue } from '@mantine/hooks';
 import { useJobs } from '@/app/JobsContextProvider';
 
 export function JobFiltersWithHandlers() {
-  const { filters, setFilters, clearFilters, fetchJobs } = useJobs();
+  const { filters, setFilters, clearFilters} = useJobs();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [locationQuery, setLocationQuery] = useState('');

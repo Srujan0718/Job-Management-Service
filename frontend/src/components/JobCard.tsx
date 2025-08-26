@@ -9,6 +9,38 @@ interface JobCardProps {
   job: Job;
 }
 
+const getAvatarColor = (initial: string) => {
+  const colors = {
+    a: '#FF6B6B',
+    b: '#4ECDC4',
+    c: '#45B7D1',
+    d: '#96CEB4',
+    e: '#FFEEAD',
+    f: '#D4A5A5',
+    g: '#9B59B6',
+    h: '#3498DB',
+    i: '#E74C3C',
+    j: '#2ECC71',
+    k: '#F1C40F',
+    l: '#1ABC9C',
+    m: '#E67E22',
+    n: '#DB4437',
+    o: '#7F8C8D',
+    p: '#16A085',
+    q: '#8E44AD',
+    r: '#2980B9',
+    s: '#C0392B',
+    t: '#27AE60',
+    u: '#F39C12',
+    v: '#D35400',
+    w: '#BDC3C7',
+    x: '#34495E',
+    y: '#95A5A6',
+    z: '#E74C3C'
+  };
+  return colors[initial.toLowerCase()] || '#2d3748';
+};
+
 export function JobCard({ job }: JobCardProps) {
   const [mounted, setMounted] = useState(false);
 
@@ -66,13 +98,21 @@ export function JobCard({ job }: JobCardProps) {
       <div style={{ flex: 1 }}>
         <Stack gap="md">
           <Group justify="space-between" align="flex-start">
-            <Avatar
-              size={50}
-              radius="50%"
-              style={{ backgroundColor: '#2d3748', color: 'orange' }}
-            >
-              {getCompanyInitial(job.companyName)}
-            </Avatar>
+            <Group gap="sm">
+              <Avatar
+                size={50}
+                radius="50%"
+                color='white'
+                style={{ 
+                  backgroundColor: getAvatarColor(getCompanyInitial(job.companyName)), 
+                }}
+              >
+                {getCompanyInitial(job.companyName).toUpperCase()}
+              </Avatar>
+              <Text size="sm" fw={500}>
+                {job.companyName}
+              </Text>
+            </Group>
             <Badge color="blue" variant="light" size="sm" radius="md">
               {formatDate(job.applicationDeadline)}
             </Badge>

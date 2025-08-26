@@ -4,6 +4,7 @@ import {
     Group,
     Text,
     Button,
+    Image,
 } from "@mantine/core";
 import "../app/dashboard.css"
 import { CreateJobModal, useCreateJobModal } from "./createJobModal";
@@ -18,9 +19,7 @@ export default function Navbar() {
         <Container size="xxl" mb="xl" pt="xl" style={{ backgroundColor: "#fff", boxShadow: "0 5px 10px -5px rgba(90,90,90,0.2)" }}>
             <Container size="xl">
                 <Group className="navbar" justify="space-between" p="sm">
-                    <Text size="lg" className="logo">
-                        🚀
-                    </Text>
+                    <Image className="logo" src="https://www.cybermindworks.com/images/cmwlogo.svg"></Image>
                     <Text className="text">Home</Text>
                     <Text className="text">Find Jobs</Text>
                     <Text className="text">Find Talents</Text>

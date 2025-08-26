@@ -189,7 +189,7 @@ export function JobFiltersWithHandlers() {
         </div>
       </div>
 
-      {(searchQuery || locationQuery || selectedJobType || salaryRange[0] !== 10 || salaryRange[1] !== 200) && (
+      {/* {(searchQuery || locationQuery || selectedJobType || salaryRange[0] !== 10 || salaryRange[1] !== 200) && (
         <button
           onClick={handleClearFilters}
           style={{
@@ -204,7 +204,7 @@ export function JobFiltersWithHandlers() {
         >
           Clear Filters
         </button>
-      )}
+      )} */}
     </Flex>
   );
 }

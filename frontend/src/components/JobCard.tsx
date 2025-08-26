@@ -66,7 +66,6 @@ export function JobCard({ job }: JobCardProps) {
   };
 
   const getExperienceText = () => {
-    // This would ideally come from job data, using placeholder for now
     return "1-3 yr Exp";
   };
 
@@ -114,7 +113,7 @@ export function JobCard({ job }: JobCardProps) {
               </Text>
             </Group>
             <Badge color="blue" variant="light" size="sm" radius="md">
-              {formatDate(job.applicationDeadline)}
+              {formatDate(job.createdAt)}
             </Badge>
           </Group>
 
